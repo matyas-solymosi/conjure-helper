@@ -1,36 +1,93 @@
-.styled-table {
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
 }
 
-.styled-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+}
+/* 
+.conjure {
+border: 2px solid #ddd;
+display: inline-flex;
+box-sizing: border-box;
+outline:none;
+-webkit-appearance: none;
+background-color: transparent;
+border: none;
+align-items: center;
+justify-content: center;
+width: 3rem;
+height: 3rem;
+cursor: pointer;
+margin: 0;
+position: relative;
+display: inline-block;
+position: absolute;
+font-weight: 900;
+} */
+
+.number-input {
+display: inline-flex;
 }
 
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
+.number-input,
+.number-input * {
+box-sizing: border-box;
 }
 
-.styled-table tbody tr {
-    border-bottom: thin solid #dddddd;
+.number-input button {
+color: white;
+outline:none;
+-webkit-appearance: none;
+background-color: transparent;
+border: none;
+align-items: center;
+justify-content: center;
+width: 3rem;
+height: 3rem;
+cursor: pointer;
+margin: 0;
+position: relative;
 }
 
-.styled-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+.number-input button:after {
+display: inline-block;
+position: absolute;
+font-family: "Font Awesome 5 Free"; 
+font-weight: 900;
+content: '\f077';
+transform: translate(-50%, -50%) rotate(180deg);
+}
+.number-input button.plus:after {
+transform: translate(-50%, -50%) rotate(0deg);
 }
 
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+.number-input input[type=number] {
+color: white;
+background-color: transparent;
+font-family: sans-serif;
+max-width: 5rem;
+padding: .5rem;
+border: solid grey;
+border-width: 2px 2px;
+font-size: 2rem;
+height: 3rem;
+font-weight: bold;
+text-align: center;
 }
 
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
+
+
+input[type="checkbox"] {
+    transform: scale(3);
+    accent-color: grey;
+}
+
+td {
+    text-align: center;
+    
+    vertical-align:middle;
 }
