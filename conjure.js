@@ -125,7 +125,7 @@ function conjure() {
 function createTable(rowCount) {
     var headers = ["Élet", "Advantage", "Támadás Tipusa", "Dobás(ok)", "Sebzés"]
     var table = document.createElement('table')
-    table.className = "table table-striped table-dark table-hover w-auto "
+    table.className = "table table-striped table-dark table-hover w-auto"
     table.id = "conjureTable"
 
     for (let i = 0; i < rowCount; i++) {
@@ -154,8 +154,7 @@ function createTable(rowCount) {
         headerRow.insertCell(i).innerHTML = headers[i]
         headerRow.cells[i].className = 'text-center'
     }
-
-    document.body.appendChild(table)
+    document.getElementById('tableDiv').appendChild(table)
 }
 
 function checkDeath(id, index) {

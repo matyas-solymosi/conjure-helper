@@ -8,21 +8,18 @@
         <link type="text/css" rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     </head>
-    <body>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/2d0cc5fe9d.js" crossorigin="anonymous"></script>
-        <div class="input">
-            <div class="number-input">
-                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus" style="color: black;"></button>
-                <input id="conjureCount" class="quantity" min="0" name="quantity" value="8" type="number" style="color: black;">
-                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus" style="color: black;"></button>
+    <body style="background-color: grey;">
+        <div class="main" style="width: fit-content;">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/2d0cc5fe9d.js" crossorigin="anonymous"></script>
+            <div class="input">
+                <input id="conjureCount" min="0" name="quantity" value="8" type="number" style="color: black; width: 200px; height: 30px;"><button style="width: 363.58px; background-color: forestgreen; color: white;" class='conjure' onclick="conjure()">Megidéz!</button>
+                <div id="tableDiv"></div>
+                <button style="width: 563.58px; background-color:maroon; color: white;" id="attackButton" onclick="attackWithAnimals()" disabled="true">Támadás!</button>
             </div>
-            <button class='conjure' onclick="conjure()">Megidéz!</button>
-            <button id="attackButton" onclick="attackWithAnimals()" disabled="true">Támadás!</button>
+    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />    
         </div>
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-
         
     </body>
 </html>

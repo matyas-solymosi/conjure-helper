@@ -91,3 +91,7 @@ td {
     
     vertical-align:middle;
 }
+
+table.table-dark {
+    margin-bottom: 0;
+}
